@@ -4,3 +4,8 @@ body {
   color: white;
   text-align: center;
 }
+
+h1 {
+  Font-size: 72px;
+  font-family: impact;
+}
