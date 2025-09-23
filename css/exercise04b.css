@@ -1,0 +1,80 @@
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+body {
+  font-family: system-ui;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fm%2FBGHPfbtyLGkAAAAC%2Fcat-lovers-gif-cat-gif.gif&f=1&nofb=1&ipt=822a64e883f69d7f93604a9ea72eac02e2352e1f329c265c1090ae36231b7cb6");
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+  font-family: impact;
+}
+
+p {
+  font-size: 38px;
+}
+
+p1 {
+  font-size: 40px;
+}
+
+p2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+figcaption {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+nav ul {
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  magin: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  --angle: 0dg;
+  float: left;
+  border: 5px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+  animation: 10s rotate linear infinite;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: blue;
+}
