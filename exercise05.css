@@ -1,0 +1,72 @@
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+body {
+  font-family: system-ui;
+  background: #000000;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+  font-family: impact;
+}
+
+p {
+  font-size: 38px;
+}
+
+figcaption {
+  font-size: 24px;
+}
+
+nav ul {
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  magin: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  --angle: 0dg;
+  float: left;
+  border: 5px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+  animation: 10s rotate linear infinite;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: palegreen;
+  text-stroke: 1px palegreen;
+  -webkit-text-stroke: 1px palegreen;
+  background-color: blue;
+}
