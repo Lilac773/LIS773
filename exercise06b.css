@@ -1,0 +1,177 @@
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+body {
+  font-family: system-ui;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fm%2FBGHPfbtyLGkAAAAC%2Fcat-lovers-gif-cat-gif.gif&f=1&nofb=1&ipt=822a64e883f69d7f93604a9ea72eac02e2352e1f329c265c1090ae36231b7cb6");
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 150px;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: impact;
+}
+
+.subtitle {
+  font-size: 58px;
+}
+
+p {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 38px;
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+}
+
+p1 {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+}
+
+/*contrast makes the truth apparent*/
+.truth {
+  --angle: 0dg;
+  font-weight: bold;
+  font-size: 52px;
+  background: linear-gradient(
+    90deg,
+    red,
+    yellow,
+    lime,
+    aqua,
+    blue,
+    magenta,
+    red
+  );
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 1s linear infinite;
+  display: inline-block;
+}
+
+p2 {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 40px;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+}
+
+#our-savior {
+  display: inline-block;
+  --angle: 0dg;
+  border: 10px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+  animation: 5s rotate linear infinite;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 80%;
+  text-align: center;
+}
+
+img.scaled {
+  width: 100%;
+}
+
+figcaption {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 1);
+  background-size: cover;
+}
+
+nav ul {
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  magin: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  --angle: 0dg;
+  float: left;
+  border: 5px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+  animation: 10s rotate linear infinite;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: palegreen;
+  text-stroke: 1px palegreen;
+  -webkit-text-stroke: 1px palegreen;
+  background-color: blue;
+}
+
+hr {
+  border: 5px white solid;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
