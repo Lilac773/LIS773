@@ -9,18 +9,18 @@ body {
 
 h1 {
   font-family: Courier New;
-  font-size: 60px;
+  font-size: 60em;
   color: #363430;
 }
 
 h2{
   font-weight: normal;
-  font-size: 28px;
+  font-size: 28em;
   color: #363430;
 }
 h3{
   font-family: Courier New;
-  font-size: 32px;
+  font-size: 32em;
   color: #363430;
  
 }
@@ -39,16 +39,16 @@ nav ul {
 
 nav ul li {
   float: left;
-  border: 2px solid;
+  border: 2em solid;
   
 }
 
 nav ul li a {
   display: block;
   color: #363430;
-  padding: 14px 16px;
+  padding: 14em 16em;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 1em;
 }
 
 nav ul li a:hover {
@@ -67,13 +67,13 @@ figure {
 figcaption {
   inline-size: 0;
   min-inline-size:100%;
-  font-size: 8px;
+  font-size: 8pxem;
 }
 
 
 p{
   text-align: left;
-  width: 450px;
+  width: 450em;
      
 }
 
@@ -84,7 +84,7 @@ ul{
 
 
 ol{
-  width: 400px;
+  width: 400em;
   text-align: left;
 }
 
@@ -94,13 +94,13 @@ hr{
 }
 
 article{
-  border: 1px solid black;             
-  padding: 20px; 
+  border: 1em solid black;             
+  padding: 20em; 
   display:inline-block;
 }
 
 .rightbox{
-  margin-right: 300px;
+  margin-right: 300em;
 }
 
 
@@ -140,33 +140,33 @@ article{
 }
   
 #leftbox{
-  margin-left: 300px;
+  margin-left: 300em;
 }
 
 #rightimg{
   display: table;
   float: right;
-  margin-left: 0px;
-  margin-right: 200px;
-  margin-top: 200px;
-  font-size: 10px; 
+  margin-left: 0em;
+  margin-right: 200em;
+  margin-top: 200em;
+  font-size: 10em; 
 }
 #location{
   text-align: middle;
-  line-height: 15px;
-  font-size: 32px;
+  line-height: 15em;
+  font-size: 32em;
 }
 
 #details{
   text-align: middle;
-  line-height: 15px;
-  font-size: 32px;
+  line-height: 15em;
+  font-size: 32em;
 }
 
 #salepic{
-  margin-top: 100px; 
+  margin-top: 100em; 
   margin-left: 20%;
-  margin-right: 0px;
+  margin-right: 0em;
 }
 
 #footer{
