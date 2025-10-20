@@ -4,7 +4,7 @@ body {
   background: #FCFBF4;
   color: #363430;
   text-align: center;
-  
+  min-width: 100px;
 }
 
 h1 {
