@@ -4,22 +4,23 @@ body {
   background: #FCFBF4;
   color: #363430;
   text-align: center;
+  
 }
 
 h1 {
   font-family: Courier New;
-  font-size: 60em;
+  font-size: 60px;
   color: #363430;
 }
 
 h2{
   font-weight: normal;
-  font-size: 28em;
+  font-size: 28px;
   color: #363430;
 }
 h3{
   font-family: Courier New;
-  font-size: 32em;
+  font-size: 32px;
   color: #363430;
  
 }
@@ -38,16 +39,16 @@ nav ul {
 
 nav ul li {
   float: left;
-  border: 2em solid;
+  border: 2px solid;
   
 }
 
 nav ul li a {
   display: block;
   color: #363430;
-  padding: 14em 16em;
+  padding: 14px 16px;
   text-decoration: none;
-  letter-spacing: 1em;
+  letter-spacing: 1px;
 }
 
 nav ul li a:hover {
@@ -66,13 +67,13 @@ figure {
 figcaption {
   inline-size: 0;
   min-inline-size:100%;
-  font-size: 8pxem;
+  font-size: 8px;
 }
 
 
 p{
   text-align: left;
-  width: 450em;
+  width: 450px;
      
 }
 
@@ -83,7 +84,7 @@ ul{
 
 
 ol{
-  width: 400em;
+  width: 400px;
   text-align: left;
 }
 
@@ -93,13 +94,13 @@ hr{
 }
 
 article{
-  border: 1em solid black;             
-  padding: 20em; 
+  border: 1px solid black;             
+  padding: 20px; 
   display:inline-block;
 }
 
 .rightbox{
-  margin-right: 300em;
+  margin-right: 300px;
 }
 
 
@@ -139,33 +140,33 @@ article{
 }
   
 #leftbox{
-  margin-left: 300em;
+  margin-left: 300px;
 }
 
 #rightimg{
   display: table;
   float: right;
-  margin-left: 0em;
-  margin-right: 200em;
-  margin-top: 200em;
-  font-size: 10em; 
+  margin-left: 0px;
+  margin-right: 200px;
+  margin-top: 200px;
+  font-size: 10px; 
 }
 #location{
   text-align: middle;
-  line-height: 15em;
-  font-size: 32em;
+  line-height: 15px;
+  font-size: 32px;
 }
 
 #details{
   text-align: middle;
-  line-height: 15em;
-  font-size: 32em;
+  line-height: 15px;
+  font-size: 32px;
 }
 
 #salepic{
-  margin-top: 100em; 
+  margin-top: 100px; 
   margin-left: 20%;
-  margin-right: 0em;
+  margin-right: 0px;
 }
 
 #footer{
