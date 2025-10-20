@@ -146,7 +146,7 @@ article{
   display: table;
   float: right;
   margin-left: 0px;
-  margin-right: 300px;
+  margin-right: 200px;
   margin-top: 200px;
   font-size: 10px; 
 }
@@ -164,7 +164,6 @@ article{
 
 #salepic{
   margin-top: 100px;
-  margin-right: 10%;
 }
 
 #footer{
