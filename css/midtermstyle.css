@@ -14,17 +14,18 @@ h1 {
 }
 
 h2{
-  font-family: Courier New;
-  font-size: 32px;
+  font-weight: normal;
+  font-size: 28px;
   color: #363430;
 }
 h3{
-  text-align: center;
+  font-family: Courier New;
+  font-size: 32px;
   color: #363430;
+ 
 }
 h4{
-  font-weight: normal;
-  font-size: 28px;
+   text-align: center;
   color: #363430;
 }
 
