@@ -71,8 +71,8 @@ figcaption {
 
 p {
   text-align: left;
-  width: 450px;
-
+  width: 100%;
+  max-width: 500px;
 }
 
 ul {
@@ -131,15 +131,22 @@ article {
 
 #location {
   text-align: middle;
-  line-height: 15px;
+  display: inline;
   font-size: 32px;
 }
 
 #details {
   text-align: middle;
-  line-height: 15px;
+  display: inline;  
   font-size: 32px;
 }
+
+#pricing {
+  text-align: center;
+  display: inline;
+  font-size: 32px;
+}
+
 
 #footer {
   left: 0;
@@ -151,12 +158,6 @@ article {
 #footer p {
   text-align: center;
   width: 100%;
-}
-
-#pricing {
-  text-align: center;
-  line-height: 15px;
-  font-size: 32px;
 }
 
 #img1{
