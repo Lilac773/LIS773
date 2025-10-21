@@ -122,6 +122,13 @@ article {
   }
 }
 
+.floatfix {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 #location {
   text-align: middle;
   line-height: 15px;
@@ -152,9 +159,20 @@ article {
   font-size: 32px;
 }
 
-.floatfix {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+#img1{
+  width: auto;
+  max-height: 500px;
+  height: 100%;
+}
+
+#img2{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+#img3{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
