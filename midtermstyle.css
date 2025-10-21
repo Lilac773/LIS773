@@ -85,6 +85,7 @@ p {
 ul {
   display: inline-block;
   text-align: left;
+  margin-top: 0em;
 }
 
 ol {
