@@ -1,10 +1,9 @@
-
 body {
   font-family: system-ui;
   background: #FCFBF4;
   color: #363430;
   text-align: center;
-  
+
 }
 
 h1 {
@@ -13,19 +12,21 @@ h1 {
   color: #363430;
 }
 
-h2{
+h2 {
   font-weight: normal;
   font-size: 28px;
   color: #363430;
 }
-h3{
+
+h3 {
   font-family: Courier New;
   font-size: 32px;
   color: #363430;
- 
+
 }
-h4{
-   text-align: center;
+
+h4 {
+  text-align: center;
   color: #363430;
 
 }
@@ -34,14 +35,14 @@ nav ul {
   background-color: white;
   list-style: none;
   padding: 0;
-  magin: 0;
+  margin: 0;
   display: inline-block;
 }
 
 nav ul li {
   float: left;
   border: 2px solid;
-  
+
 }
 
 nav ul li a {
@@ -56,68 +57,58 @@ nav ul li a:hover {
   text-decoration: underline;
   color: #363430;
   background-color: tan;
-} 
+}
 
 figure {
-  float:left;
-  margin-left: 20%;
-  margin-right: 0%;
   display: inline-block;
 }
 
 figcaption {
   inline-size: 0;
-  min-inline-size:100%;
+  min-inline-size: 100%;
   font-size: 8px;
 }
 
-
-p{
+p {
   text-align: left;
   width: 450px;
-     
+
 }
 
-ul{
+ul {
   display: inline-block;
   text-align: left;
 }
 
-
-ol{
+ol {
   width: 400px;
   text-align: left;
 }
 
-hr{
+hr {
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-article{
-  border: 1px solid black;             
-  padding: 20px; 
-  display:inline-block;
+article {
+  border: 1px solid black;
+  padding: 20px;
+  display: inline-block;
 }
 
-.rightbox{
-  margin-right: 300px;
-}
-
-
-.centlist{
+.centlist {
   text-align: center;
 }
 
-.centp{
+.centp {
   text-align: center;
-  width:100%
+  width: 100%
 }
 
 .screenreader-text {
   position: absolute;
   left: -999px;
-  width:1px;
+  width: 1px;
   height: 1px;
   top: auto;
 
@@ -130,53 +121,40 @@ article{
     margin: auto;
   }
 }
-  
-.screenreader-text:focus {
-  color: #464440;
-  display: inline-block;
-  height: auto;
-  width: auto;
-  position: static;
-  margin: auto;
-}
-  
-#leftbox{
-  margin-left: 300px;
-}
 
-#rightimg{
-  display: table;
-  float: right;
-  margin-left: 0px;
-  margin-right: 200px;
-  margin-top: 200px;
-  font-size: 10px; 
-}
-#location{
+#location {
   text-align: middle;
   line-height: 15px;
   font-size: 32px;
 }
 
-#details{
+#details {
   text-align: middle;
   line-height: 15px;
   font-size: 32px;
 }
 
-#salepic{
-  margin-top: 100px; 
-  margin-left: 20%;
-  margin-right: 0px;
-}
-
-#footer{
+#footer {
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
-#footer p{
+
+#footer p {
   text-align: center;
-  width:100%;
+  width: 100%;
+}
+
+#pricing {
+  text-align: center;
+  line-height: 15px;
+  font-size: 32px;
+}
+
+.floatfix {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
