@@ -63,6 +63,12 @@ figure {
   display: inline-block;
 }
 
+img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
 figcaption {
   inline-size: 0;
   min-inline-size: 100%;
@@ -161,22 +167,4 @@ article {
   text-align: center;
   display: inline;
   font-size: 32px;
-}
-
-#img1{
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
-#img2{
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
-#img3{
-  width: 100%;
-  max-width: 500px;
-  height: auto;
 }
