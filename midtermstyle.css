@@ -73,6 +73,7 @@ p {
   text-align: left;
   width: 100%;
   max-width: 500px;
+
 }
 
 ul {
@@ -81,7 +82,8 @@ ul {
 }
 
 ol {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   text-align: left;
 }
 
@@ -102,7 +104,8 @@ article {
 
 .centp {
   text-align: center;
-  width: 100%
+  width: 100%;
+  max-width: 500px;
 }
 
 .screenreader-text {
@@ -131,22 +134,15 @@ article {
 
 #location {
   text-align: middle;
-  display: inline;
+   display: inline;
   font-size: 32px;
 }
 
 #details {
   text-align: middle;
-  display: inline;  
-  font-size: 32px;
-}
-
-#pricing {
-  text-align: center;
   display: inline;
   font-size: 32px;
 }
-
 
 #footer {
   left: 0;
@@ -159,6 +155,12 @@ article {
   text-align: center;
   width: 100%;
   max-width: 100%;
+}
+
+#pricing {
+  text-align: center;
+  display: inline;
+  font-size: 32px;
 }
 
 #img1{
