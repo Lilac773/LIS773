@@ -162,9 +162,10 @@ article {
 }
 
 #img1{
-  width: 100%;
+  width: auto;
   max-height: 500px;
   height: 100%;
+  max-width: 100%
 }
 
 #img2{
