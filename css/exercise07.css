@@ -89,7 +89,7 @@ nav ul li a:hover {
   }
 
   .screenreader-text:focus {
-    color: black;
+    color: white;
     display: inline-block;
     height: auto;
     width: auto;
