@@ -81,7 +81,7 @@ nav ul li a:hover {
   color: white;
 
   &:focus {
-    color: $background-color;
+    color: white;
     display: inline-block;
     height: auto;
     width: auto;
