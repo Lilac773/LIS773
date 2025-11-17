@@ -1,0 +1,277 @@
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+body {
+  font-family: system-ui;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fm%2FBGHPfbtyLGkAAAAC%2Fcat-lovers-gif-cat-gif.gif&f=1&nofb=1&ipt=822a64e883f69d7f93604a9ea72eac02e2352e1f329c265c1090ae36231b7cb6");
+  color: white;
+  text-align: center;
+}
+iframe {
+  min-width: 800px;
+}
+h1 {
+  display: inline-block;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: impact;
+}
+
+p {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+}
+
+figcaption {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 1);
+  background-size: cover;
+}
+
+nav ul {
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  magin: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  --angle: 0dg;
+  float: left;
+  border: 5px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+  animation: 10s rotate linear infinite;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  padding: 5px 8px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: palegreen;
+  text-stroke: 1px palegreen;
+  -webkit-text-stroke: 1px palegreen;
+  background-color: blue;
+}
+
+hr {
+  border: 5px white solid;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+button {
+  font-size: 18px;
+}
+
+.lieremover {
+  display: none;
+}
+.button {
+  padding: 12px 0;
+  width: 96%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.clouded {
+  display: none;
+}
+
+.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+
+  &:focus {
+    color: $background-color;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+  }
+  .screenreader-text:focus {
+    color: black;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+  }
+}
+
+#enemyfig {
+  display: none;
+}
+
+/*contrast makes the truth apparent*/
+.truth {
+  --angle: 0dg;
+  font-weight: bold;
+  font-size: 30px;
+  background: linear-gradient(
+    90deg,
+    red,
+    yellow,
+    lime,
+    aqua,
+    blue,
+    magenta,
+    red
+  );
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 1s linear infinite;
+  display: inline;
+}
+
+.subtitle {
+  font-size: 40px;
+}
+
+img.scaled {
+  width: 100%;
+}
+
+#our-savior {
+  display: none;
+  --angle: 0dg;
+  border: 10px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+  animation: 5s rotate linear infinite;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 70%;
+  text-align: center;
+}
+
+#enemy {
+  max-width: 320px;
+}
+
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 100px;
+  }
+  .subtitle {
+    font-size: 46px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+  figcaption {
+    font-size: 18px;
+  }
+
+  nav ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+  .truth {
+    font-size: 30px;
+  }
+  #enemy {
+    max-width: 400px;
+  }
+}
+
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 150px;
+  }
+  .subtitle {
+    font-size: 58px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+  figcaption {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 24px;
+  }
+
+  nav ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  .truth {
+    font-size: 52px;
+  }
+  #enemy {
+    max-width: 640px;
+  }
+}
