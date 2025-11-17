@@ -25,9 +25,32 @@ body {
   color: white;
   text-align: center;
 }
-iframe {
-  min-width: 800px;
+
+.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+
+  &:focus {
+    color: $background-color;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+  }
+  .screenreader-text:focus {
+    color: black;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+  }
 }
+
 h1 {
   display: inline-block;
   margin: 0px auto 0px auto;
@@ -36,24 +59,8 @@ h1 {
   background: rgba(0, 0, 0, 0.7);
   font-family: impact;
 }
-
-p {
-  display: table;
-  margin: 0px auto 0px auto;
-  padding: 5px;
-  font-size: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  background-size: cover;
-}
-
-figcaption {
-  display: table;
-  margin: 0px auto 0px auto;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: 300;
-  background: rgba(0, 0, 0, 1);
-  background-size: cover;
+  h1 .subtitle {
+    font-size: 40px;
 }
 
 nav ul {
@@ -82,109 +89,89 @@ nav ul li {
   animation: 10s rotate linear infinite;
 }
 
-nav ul li a {
-  display: block;
-  color: black;
-  padding: 5px 8px;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
+  nav ul li a {
+    display: block;
+    color: black;
+    padding: 5px 8px;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  color: palegreen;
-  text-stroke: 1px palegreen;
-  -webkit-text-stroke: 1px palegreen;
-  background-color: blue;
-}
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: palegreen;
+      text-stroke: 1px palegreen;
+      -webkit-text-stroke: 1px palegreen;
+      background-color: blue;
+    }
 
-hr {
-  border: 5px white solid;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-button {
-  font-size: 18px;
-}
-
-.lieremover {
-  display: none;
-}
-.button {
+div.button {
   padding: 12px 0;
   width: 96%;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.clouded {
-  display: none;
+  button {
+  font-size: 18px;
 }
 
-.screenreader-text {
-  position: absolute;
-  left: -999px;
-  width: 1px;
-  height: 1px;
-  top: auto;
 
-  &:focus {
-    color: $background-color;
-    display: inline-block;
-    height: auto;
-    width: auto;
-    position: static;
-    margin: auto;
+
+p {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+}
+
+  .clouded {
+    display: none;
   }
-  .screenreader-text:focus {
-    color: black;
-    display: inline-block;
-    height: auto;
-    width: auto;
-    position: static;
-    margin: auto;
+
+  .lieremover {
+    display: none;
   }
-}
 
-#enemyfig {
-  display: none;
-}
-
-/*contrast makes the truth apparent*/
-.truth {
-  --angle: 0dg;
-  font-weight: bold;
-  font-size: 30px;
-  background: linear-gradient(
-    90deg,
-    red,
-    yellow,
-    lime,
-    aqua,
-    blue,
-    magenta,
-    red
-  );
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  animation: gradient-flow 1s linear infinite;
-  display: inline;
-}
-
-.subtitle {
-  font-size: 40px;
-}
+  /*contrast makes the truth apparent*/
+  .truth {
+    --angle: 0dg;
+    font-weight: bold;
+    font-size: 30px;
+    background: linear-gradient(
+      90deg,
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    );
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 1s linear infinite;
+    display: inline;
+  }
 
 img.scaled {
   width: 100%;
 }
 
-#our-savior {
+  #enemyfig {
+    display: none;
+  }
+
+  #enemy {
+    max-width: 320px;
+  }
+  #our-savior {
   display: none;
   --angle: 0dg;
   border: 10px solid;
@@ -206,55 +193,87 @@ img.scaled {
   text-align: center;
 }
 
-#enemy {
-  max-width: 320px;
+figcaption {
+  display: table;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 1);
+  background-size: cover;
 }
+
+
+hr {
+  border: 5px white solid;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+
 
 /* For devices with a minimum width of 768px (Medium) */
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 100px;
   }
-  .subtitle {
-    font-size: 46px;
+    h1.subtitle {
+      font-size: 46px;
+    }
+
+  button {
+    font-size: 20px;
   }
 
   p {
     font-size: 25px;
   }
+
+    .truth {
+    font-size: 30px;
+  }
+
+  #enemy {
+    max-width: 400px;
+  }
+
   figcaption {
     font-size: 18px;
   }
 
+}
   nav ul li a {
     padding: 14px 16px;
     text-decoration: none;
     letter-spacing: 1px;
   }
 
-  button {
-    font-size: 20px;
-  }
-  .truth {
-    font-size: 30px;
-  }
-  #enemy {
-    max-width: 400px;
-  }
-}
+  
+  
+  
 
 /* For devices with a minimum width of 992px (Large) */
 @media screen and (min-width: 992px) {
   h1 {
     font-size: 150px;
   }
-  .subtitle {
-    font-size: 58px;
-  }
+     h1.subtitle {
+      font-size: 58px;
+    }
 
   p {
     font-size: 40px;
   }
+
+    .truth {
+      font-size: 52px;
+    }
+  
+  #enemy {
+    max-width: 640px;
+  }
+
   figcaption {
     font-size: 24px;
   }
@@ -268,10 +287,6 @@ img.scaled {
     text-decoration: none;
     letter-spacing: 1px;
   }
-  .truth {
-    font-size: 52px;
-  }
-  #enemy {
-    max-width: 640px;
-  }
+  
+  
 }
