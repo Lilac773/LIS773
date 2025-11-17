@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="css/exercise08b.css">
+  <link rel="stylesheet" type="text/css" href="css/exercise09b.css">
   <title>THE TRUTH</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 
 <body>
   <a id="skip-nav" class="screenreader-text" href="#maincontent"> skip to content</a>
-  <script src="js/exercise08b.js"></script>
+  <script src="js/exercise09b.js"></script>
   <iframe class="scaled-frame" src="https://embed.screenapp.io/app/#/shared/lYb4vaWpb2?embed=true" width="80%" height="125" frameborder="5" allowfullscreen></iframe>
   <header>
     <h1> THE TRUTH</h1>
